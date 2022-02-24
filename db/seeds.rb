@@ -1,5 +1,3 @@
-Create a seeds.rb file in the db folder
-Copy the following into that file:
 users = [
   { username: "sharky_j", avatar_url: "http://naserca.com/images/sharky_j.jpg", email: "sharky_j@gmail.com", password: "abcd" },
   { username: "kirk_whalum", avatar_url: "http://naserca.com/images/kirk_whalum.jpg", email: "kirk_w@gmail.com", password: "abcd" },
@@ -15,6 +13,7 @@ finstagram_posts = [
 puts "=== Seeding database... ==="
 
 # create Users and FinstagramPosts
+
 users.each_with_index do |user, index|
   # create new User
   user_record = User.create(user)
